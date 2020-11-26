@@ -1,6 +1,7 @@
 html {
   font-size: calc(0.7rem + 1vw);
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 *, 
@@ -16,6 +17,9 @@ body,
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+button {
+  font-size: 1.2rem;
+}
 a {
   text-decoration: none;
   text-transform: uppercase;
@@ -63,6 +67,32 @@ footer {
   align-items: center;
 }
 
+.content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.main-bar {
+  flex: 3 60rem;
+}
+
+.side-bar {
+  flex: 1 20rem;
+}
+
+/* filter section */
+.filter {
+  display: flex;
+  justify-content: space-between;
+
+  margin: 1rem;
+  padding: 1rem;
+  border-bottom: 2px solid #c0c0c0;
+}
+
+.filter div {
+  flex: 1;
+}
 
 @media (min-width: 900px) {
   html {
